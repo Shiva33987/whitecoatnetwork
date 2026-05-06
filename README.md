@@ -59,3 +59,14 @@ npm run dev
 - `GET /api/awards`
 - `GET /api/directory`
 - `GET /api/journal`
+
+## Vercel Deployment
+- The project deploys from repo root.
+- `vercel.json` routes `/` and static assets to `frontend/`.
+- Production API runs from Vercel Functions in `api/`:
+  - `/api/health`
+  - `/api/network/top-pick`
+  - `/api/talks`
+  - `/api/awards`
+  - `/api/directory`
+  - `/api/journal`

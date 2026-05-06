@@ -1,4 +1,9 @@
-const API_BASE = window.WHITE_COAT_API || "http://localhost:5000/api";
+const API_BASE =
+  window.WHITE_COAT_API ||
+  (window.location.hostname === "localhost" ||
+  window.location.hostname === "127.0.0.1"
+    ? "http://localhost:5000/api"
+    : "/api");
 
 const fallbackData = {
   topPick: {
