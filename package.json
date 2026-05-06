@@ -1,0 +1,13 @@
+{
+  "name": "white-coat-network",
+  "version": "1.0.0",
+  "description": "White Coat Network - Premium Clinical Community",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix frontend\" \"npm run dev --prefix backend\"",
+    "start": "node backend/server.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
