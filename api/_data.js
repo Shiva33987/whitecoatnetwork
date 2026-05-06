@@ -65,57 +65,94 @@ module.exports = {
       name: "Dr. Rohan Malhotra",
       specialty: "Cardiology",
       hospital: "Aster Prime Heart Center",
-      location: "Hyderabad",
+      location: "Hyderabad, Telangana",
       experience: "14 years",
       rating: "4.9",
       availability: "Consulting Today"
     },
     {
-      name: "Dr. Sneha Kapoor",
-      specialty: "Dermatology",
-      hospital: "Luma Skin Institute",
-      location: "Bengaluru",
-      experience: "11 years",
+      name: "Dr. Kavitha Reddy",
+      specialty: "Gynecology",
+      hospital: "Apollo Hospitals",
+      location: "Hyderabad, Telangana",
+      experience: "18 years",
       rating: "4.8",
       availability: "Available Tomorrow"
     },
     {
-      name: "Dr. Vikram Rao",
+      name: "Dr. Suresh Babu",
       specialty: "Orthopedics",
-      hospital: "Axis Ortho Care",
-      location: "Mumbai",
-      experience: "16 years",
+      hospital: "Yashoda Hospitals",
+      location: "Secunderabad, Telangana",
+      experience: "15 years",
       rating: "4.9",
       availability: "Consulting This Week"
     },
     {
-      name: "Dr. Lavanya Iyer",
-      specialty: "Pediatrics",
-      hospital: "Bloom Child Health",
-      location: "Chennai",
-      experience: "9 years",
-      rating: "4.7",
+      name: "Dr. V. Ramakrishna",
+      specialty: "Neurology",
+      hospital: "Care Hospitals",
+      location: "Visakhapatnam, Andhra Pradesh",
+      experience: "22 years",
+      rating: "5.0",
       availability: "Consulting Today"
     },
     {
-      name: "Dr. Farhan Siddiqui",
-      specialty: "Neurology",
-      hospital: "NeuroSphere Medical",
-      location: "Delhi",
-      experience: "13 years",
-      rating: "4.8",
+      name: "Dr. Lakshmi Narayana",
+      specialty: "Pediatrics",
+      hospital: "Rainbow Children's Hospital",
+      location: "Visakhapatnam, Andhra Pradesh",
+      experience: "12 years",
+      rating: "4.7",
       availability: "Available Tomorrow"
     },
     {
-      name: "Dr. Aditi Sen",
-      specialty: "Gynecology",
-      hospital: "HerCare Collective",
-      location: "Kolkata",
-      experience: "12 years",
+      name: "Dr. P. Srinivas Rao",
+      specialty: "Oncology",
+      hospital: "American Oncology Institute",
+      location: "Vijayawada, Andhra Pradesh",
+      experience: "16 years",
+      rating: "4.9",
+      availability: "Consulting Today"
+    },
+    {
+      name: "Dr. Anitha Devi",
+      specialty: "Dermatology",
+      hospital: "KIMS Hospitals",
+      location: "Vijayawada, Andhra Pradesh",
+      experience: "10 years",
       rating: "4.8",
       availability: "Consulting This Week"
+    },
+    {
+      name: "Dr. Mohd. Ahmed",
+      specialty: "Nephrology",
+      hospital: "St. Ann's Hospital",
+      location: "Warangal, Telangana",
+      experience: "13 years",
+      rating: "4.6",
+      availability: "Available Tomorrow"
+    },
+    {
+      name: "Dr. Ch. Venkat Reddy",
+      specialty: "Gastroenterology",
+      hospital: "Continental Hospitals",
+      location: "Hyderabad, Telangana",
+      experience: "20 years",
+      rating: "4.9",
+      availability: "Consulting Today"
+    },
+    {
+      name: "Dr. S. Prashanthi",
+      specialty: "Endocrinology",
+      hospital: "Andhra Hospitals",
+      location: "Vijayawada, Andhra Pradesh",
+      experience: "11 years",
+      rating: "4.7",
+      availability: "Available Tomorrow"
     }
   ],
+
   journal: [
     {
       title: "Designing Better Referral Pathways Through Data-Sharing Standards",

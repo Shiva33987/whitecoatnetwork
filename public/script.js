@@ -159,8 +159,10 @@ const fallbackData = {
 const state = {
   directory: [],
   activeSpecialty: "All",
+  activeState: "All",
   search: ""
 };
+
 
 function formatNumber(value) {
   return new Intl.NumberFormat("en-IN").format(value);
@@ -237,13 +239,28 @@ function renderAwards(awards) {
 }
 
 function renderDirectoryFilters() {
-  const filters = document.getElementById("specialty-filters");
+  const specialtyContainer = document.getElementById("specialty-filters");
+  const stateContainer = document.getElementById("state-filters");
+
+  // State Filters
+  const states = ["All", "Telangana", "Andhra Pradesh"];
+  stateContainer.innerHTML = states
+    .map(
+      (stateName) => `
+      <button class="chip ${
+        stateName === state.activeState ? "active" : ""
+      }" data-state="${stateName}">${stateName}</button>
+    `
+    )
+    .join("");
+
+  // Specialty Filters
   const specialties = [
     "All",
     ...new Set(state.directory.map((doctor) => doctor.specialty))
   ];
 
-  filters.innerHTML = specialties
+  specialtyContainer.innerHTML = specialties
     .map(
       (specialty) => `
       <button class="chip ${
@@ -253,7 +270,16 @@ function renderDirectoryFilters() {
     )
     .join("");
 
-  filters.querySelectorAll(".chip").forEach((chip) => {
+  // Event Listeners
+  stateContainer.querySelectorAll(".chip").forEach((chip) => {
+    chip.addEventListener("click", () => {
+      state.activeState = chip.dataset.state;
+      renderDirectoryFilters();
+      renderDirectoryCards();
+    });
+  });
+
+  specialtyContainer.querySelectorAll(".chip").forEach((chip) => {
     chip.addEventListener("click", () => {
       state.activeSpecialty = chip.dataset.specialty;
       renderDirectoryFilters();
@@ -261,6 +287,7 @@ function renderDirectoryFilters() {
     });
   });
 }
+
 
 function filteredDirectory() {
   const query = state.search.trim().toLowerCase();
@@ -270,6 +297,9 @@ function filteredDirectory() {
       state.activeSpecialty === "All" ||
       doctor.specialty === state.activeSpecialty;
 
+    const statePass =
+      state.activeState === "All" || doctor.location.includes(state.activeState);
+
     const searchPass =
       !query ||
       [doctor.name, doctor.specialty, doctor.location, doctor.hospital]
@@ -277,9 +307,10 @@ function filteredDirectory() {
         .toLowerCase()
         .includes(query);
 
-    return specialtyPass && searchPass;
+    return specialtyPass && statePass && searchPass;
   });
 }
+
 
 function renderDirectoryCards() {
   const container = document.getElementById("directory-list");
