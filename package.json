@@ -4,10 +4,11 @@
   "description": "White Coat Network - Premium Clinical Community",
   "private": true,
   "scripts": {
-    "dev": "concurrently \"npm run dev-frontend\" \"npm run dev-backend\"",
-    "dev-frontend": "serve . -p 3000",
+    "dev": "npx concurrently \"npm run dev-frontend\" \"npm run dev-backend\"",
+    "dev-frontend": "npx serve . -p 3000",
     "dev-backend": "cd backend && npm run dev",
     "build": "echo 'Static build complete'"
+
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
