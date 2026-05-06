@@ -596,7 +596,35 @@ main {
   font-size: 0.83rem;
 }
 
+.center-head {
+  text-align: center;
+  place-items: center;
+}
+
+.center-head p {
+  margin: 0 auto;
+}
+
+.join-section {
+  background: linear-gradient(140deg, #ffffff, #f0f6ff);
+  margin-top: 1rem;
+}
+
+.join-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+
+.join-grid .card {
+  padding: 1.8rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.88);
+}
+
 .reveal {
+
   opacity: 0;
   transform: translateY(28px) scale(0.995);
   transition: opacity 700ms ease, transform 700ms ease;
