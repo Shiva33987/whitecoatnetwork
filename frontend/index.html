@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>White Coat Network</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="ambient" aria-hidden="true">
+    <span class="blob blob-one"></span>
+    <span class="blob blob-two"></span>
+    <span class="blob blob-three"></span>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#network">
+      <span class="brand-mark">WCN</span>
+      <span class="brand-text">White Coat Network</span>
+    </a>
+    <nav class="main-nav">
+      <a href="#talks">Talks</a>
+      <a href="#awards">Awards</a>
+      <a href="#directory">Directory</a>
+      <a href="#journal">Journal</a>
+    </nav>
+    <a href="#directory" class="button button-ghost">Find Specialists</a>
+  </header>
+
+  <main>
+    <section id="network" class="section hero reveal">
+      <div class="hero-content">
+        <p class="eyebrow">Top Pick Clinical Community</p>
+        <h1>White Coat Network</h1>
+        <p class="lead">
+          Built for modern healthcare collaboration, White Coat Network blends trusted discovery,
+          premium thought leadership, and a credible digital presence for doctors and institutions.
+        </p>
+        <div id="network-stats" class="stats-grid"></div>
+      </div>
+
+      <article class="top-pick-card" data-tilt>
+        <p class="card-kicker">Top Pick</p>
+        <h2>White Coat Network</h2>
+        <p id="top-pick-summary">Loading network overview...</p>
+        <ul id="top-pick-highlights" class="feature-list"></ul>
+        <a class="button" href="#talks">View Signature Programs</a>
+      </article>
+    </section>
+
+    <section id="talks" class="section reveal">
+      <div class="section-head">
+        <p class="eyebrow">Program 01</p>
+        <h2>White Coat Talks</h2>
+        <p>Interview-led clinical sessions with specialists discussing treatment shifts and practice insight.</p>
+      </div>
+      <div id="talks-list" class="card-grid talks-grid"></div>
+    </section>
+
+    <section id="awards" class="section reveal">
+      <div class="section-head">
+        <p class="eyebrow">Program 02</p>
+        <h2>White Coat Awards</h2>
+        <p>Recognition designed to honor measurable patient outcomes, ethics, and innovation in care.</p>
+      </div>
+      <div id="awards-list" class="card-grid awards-grid"></div>
+    </section>
+
+    <section id="directory" class="section reveal">
+      <div class="section-head">
+        <p class="eyebrow">Program 03</p>
+        <h2>White Coat Directory</h2>
+        <p>A curated directory for patients and peers to discover trusted specialists by expertise and city.</p>
+      </div>
+
+      <div class="directory-toolbar">
+        <label class="search-field">
+          <span>Search Doctor</span>
+          <input id="directory-search" type="search" placeholder="Name, specialty, city, or hospital" />
+        </label>
+        <div id="specialty-filters" class="chip-row"></div>
+      </div>
+
+      <div id="directory-list" class="directory-grid"></div>
+    </section>
+
+    <section id="journal" class="section reveal">
+      <div class="section-head">
+        <p class="eyebrow">Program 04</p>
+        <h2>White Coat Journal</h2>
+        <p>Curated medical thinking with concise analysis of methods, protocols, and implementation strategy.</p>
+      </div>
+
+      <div class="journal-layout">
+        <article id="journal-feature" class="journal-feature"></article>
+        <div id="journal-list" class="journal-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>White Coat Network | Premium digital identity for modern healthcare excellence.</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>

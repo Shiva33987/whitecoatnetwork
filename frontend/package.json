@@ -1,0 +1,13 @@
+{
+  "name": "white-coat-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for White Coat Network",
+  "scripts": {
+    "dev": "serve . -p 3000",
+    "start": "serve . -p 3000"
+  },
+  "devDependencies": {
+    "serve": "14.2.4"
+  },
+  "license": "MIT"
+}
