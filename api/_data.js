@@ -62,29 +62,29 @@ module.exports = {
   ],
   directory: [
     {
-      name: "Dr. Rohan Malhotra",
-      specialty: "Cardiology",
-      hospital: "Aster Prime Heart Center",
+      name: "Dr. Vijay Dikshit",
+      specialty: "Cardiothoracic Surgery",
+      hospital: "Apollo Hospitals",
       location: "Hyderabad, Telangana",
-      experience: "14 years",
+      experience: "32 years",
       rating: "4.9",
       availability: "Consulting Today"
     },
     {
-      name: "Dr. Kavitha Reddy",
-      specialty: "Gynecology",
-      hospital: "Apollo Hospitals",
+      name: "Dr. CH Madhusudhan",
+      specialty: "Surgical Gastroenterology",
+      hospital: "PACE Hospitals",
       location: "Hyderabad, Telangana",
-      experience: "18 years",
+      experience: "25 years",
       rating: "4.8",
       availability: "Available Tomorrow"
     },
     {
-      name: "Dr. Suresh Babu",
-      specialty: "Orthopedics",
-      hospital: "Yashoda Hospitals",
-      location: "Secunderabad, Telangana",
-      experience: "15 years",
+      name: "Dr. Prabhat Lakkireddi",
+      specialty: "Orthopedics & Joint Replacement",
+      hospital: "Apollo Hospitals",
+      location: "Hyderabad, Telangana",
+      experience: "20 years",
       rating: "4.9",
       availability: "Consulting This Week"
     },
@@ -93,16 +93,16 @@ module.exports = {
       specialty: "Neurology",
       hospital: "Care Hospitals",
       location: "Visakhapatnam, Andhra Pradesh",
-      experience: "22 years",
+      experience: "28 years",
       rating: "5.0",
       availability: "Consulting Today"
     },
     {
-      name: "Dr. Lakshmi Narayana",
-      specialty: "Pediatrics",
-      hospital: "Rainbow Children's Hospital",
-      location: "Visakhapatnam, Andhra Pradesh",
-      experience: "12 years",
+      name: "Dr. Sanjay Maitra",
+      specialty: "Nephrology",
+      hospital: "Apollo Hospitals",
+      location: "Hyderabad, Telangana",
+      experience: "22 years",
       rating: "4.7",
       availability: "Available Tomorrow"
     },
@@ -111,47 +111,48 @@ module.exports = {
       specialty: "Oncology",
       hospital: "American Oncology Institute",
       location: "Vijayawada, Andhra Pradesh",
-      experience: "16 years",
+      experience: "19 years",
       rating: "4.9",
       availability: "Consulting Today"
     },
     {
-      name: "Dr. Anitha Devi",
-      specialty: "Dermatology",
-      hospital: "KIMS Hospitals",
+      name: "Dr. M.J. Naidu",
+      specialty: "Orthopedics",
+      hospital: "MJ Naidu Super Specialty Hospital",
       location: "Vijayawada, Andhra Pradesh",
-      experience: "10 years",
-      rating: "4.8",
+      experience: "35 years",
+      rating: "4.9",
       availability: "Consulting This Week"
     },
     {
-      name: "Dr. Mohd. Ahmed",
-      specialty: "Nephrology",
-      hospital: "St. Ann's Hospital",
-      location: "Warangal, Telangana",
-      experience: "13 years",
-      rating: "4.6",
+      name: "Dr. Tripti Sharma",
+      specialty: "Endocrinology",
+      hospital: "PACE Hospitals",
+      location: "Hyderabad, Telangana",
+      experience: "15 years",
+      rating: "4.8",
       availability: "Available Tomorrow"
     },
     {
-      name: "Dr. Ch. Venkat Reddy",
-      specialty: "Gastroenterology",
-      hospital: "Continental Hospitals",
+      name: "Dr. Jayanti S Thumsi",
+      specialty: "Breast Oncology",
+      hospital: "Gleneagles Global Hospitals",
       location: "Hyderabad, Telangana",
-      experience: "20 years",
+      experience: "21 years",
       rating: "4.9",
       availability: "Consulting Today"
     },
     {
-      name: "Dr. S. Prashanthi",
-      specialty: "Endocrinology",
-      hospital: "Andhra Hospitals",
-      location: "Vijayawada, Andhra Pradesh",
-      experience: "11 years",
-      rating: "4.7",
+      name: "Dr. Sunil Kumar",
+      specialty: "Interventional Cardiology",
+      hospital: "Medicover Hospitals",
+      location: "Hyderabad, Telangana",
+      experience: "24 years",
+      rating: "4.8",
       availability: "Available Tomorrow"
     }
   ],
+
 
   journal: [
     {
