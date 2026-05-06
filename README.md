@@ -14,42 +14,22 @@
 - **Google Fonts** (Manrope + Sora) — via CDN
 - **serve** — static dev server
 
-### Browser APIs used in Frontend
-- **`fetch`** — API calls to the backend
-- **`IntersectionObserver`** — scroll reveal animations
-- **`requestAnimationFrame`** — counter animations
-- **`Intl.NumberFormat`** — number formatting
-
-> No build tools — no Webpack, Vite, Babel, or TypeScript. Pure static files served as-is.
-
 ---
 
-## Frontend
-- Location: `frontend/`
-- Open `frontend/index.html` directly in a browser for quick preview.
-- Frontend fetches data from `http://localhost:5000/api` and falls back to local demo data if backend is offline.
-
-## Backend
-- Location: `backend/`
-- Start backend:
-
-```bash
-cd backend
-node server.js
-```
-
-## Running in Dev Mode
+## Running Locally
 
 Run each in a separate terminal:
 
 ```bash
-# Terminal 1 — backend (runs on http://localhost:5000)
-cd backend
+# Terminal 1 — Entire project (frontend + backend)
 npm run dev
 
-# Terminal 2 — frontend (runs on http://localhost:3000)
-cd frontend
-npm run dev
+# Or run individually:
+# Backend (http://localhost:5000)
+cd backend && npm run dev
+
+# Frontend (http://localhost:3000)
+npm run dev-frontend
 ```
 
 ## API Endpoints
@@ -61,12 +41,8 @@ npm run dev
 - `GET /api/journal`
 
 ## Vercel Deployment
-- The project deploys from repo root.
-- `vercel.json` routes `/` and static assets to `frontend/`.
-- Production API runs from Vercel Functions in `api/`:
-  - `/api/health`
-  - `/api/network/top-pick`
-  - `/api/talks`
-  - `/api/awards`
-  - `/api/directory`
-  - `/api/journal`
+- The project deploys from the root directory.
+- Frontend files (`index.html`, `styles.css`, `script.js`) are located at the root for automatic serving.
+- Production API runs from Vercel Functions in `api/`.
+- Deployment is zero-config via `vercel.json`.
+
