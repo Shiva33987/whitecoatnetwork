@@ -4,7 +4,7 @@ const { URL } = require("url");
 const data = {
   topPick: {
     summary:
-      "White Coat Network is a premium doctors-first ecosystem that combines verified visibility, education-led influence, and trusted patient discovery.",
+      "White Coat Stories is a premium doctors-first ecosystem that combines verified visibility, education-led influence, and trusted patient discovery.",
     highlights: [
       "Verified doctor profiles with specialty-level ranking signals",
       "Thought leadership engine through talks and journal publishing",

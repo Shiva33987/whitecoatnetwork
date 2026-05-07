@@ -1,7 +1,7 @@
 {
-  "name": "white-coat-network",
+  "name": "white-coat-stories",
   "version": "1.0.0",
-  "description": "White Coat Network - Premium Clinical Community",
+  "description": "White Coat Stories - Premium Clinical Community",
   "private": true,
   "scripts": {
     "dev": "npx concurrently \"npm run dev-frontend\" \"npm run dev-backend\"",

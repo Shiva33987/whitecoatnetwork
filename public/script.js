@@ -8,7 +8,7 @@ const API_BASE =
 const fallbackData = {
   topPick: {
     summary:
-      "White Coat Network connects doctors, hospitals, and healthcare innovators through high-trust discovery, collaboration programs, and expert-led education.",
+      "White Coat Stories connects doctors, hospitals, and healthcare innovators through high-trust discovery, collaboration programs, and expert-led education.",
     highlights: [
       "Verified clinical profiles with outcomes-led highlights",
       "Integrated knowledge flow through talks and journal channels",
@@ -458,6 +458,20 @@ function bindDirectorySearch() {
   });
 }
 
+function initSmartHeader() {
+  const header = document.querySelector(".site-header");
+  let lastScrollY = window.scrollY;
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > lastScrollY && window.scrollY > 150) {
+      header.classList.add("nav-hidden");
+    } else {
+      header.classList.remove("nav-hidden");
+    }
+    lastScrollY = window.scrollY;
+  });
+}
+
 async function bootstrap() {
   const [topPick, talks, awards, directory, journal] = await Promise.all([
     fetchJSON("/network/top-pick"),
@@ -488,6 +502,7 @@ async function bootstrap() {
   initRevealAnimations();
   initTiltEffects();
   initParallax();
+  initSmartHeader();
 }
 
 document.addEventListener("DOMContentLoaded", bootstrap);
